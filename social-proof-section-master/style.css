@@ -1,0 +1,244 @@
+html {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background-image: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg), url(/social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: 1px 1px, 1px 700px;
+}
+
+@media screen and (min-width: 900px) {
+  html {
+    background-image: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg), url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 70%, 70%;
+    background-position: -400px -110px, 320px 160px;
+  }
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (200px)[3];
+      grid-template-rows: repeat(3, 200px);
+  padding: 50px 35px;
+  justify-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 120px 120px;
+        grid-template-rows: 120px 120px;
+    padding: 50px 35px;
+  }
+}
+
+header #title {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  width: 250px;
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #502050;
+  margin-top: 0px;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  header #title {
+    width: 370px;
+    text-align: left;
+  }
+}
+
+header #subtitle {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  width: 350px;
+  text-align: center;
+  color: #937b92;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  header #subtitle {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    text-align: left;
+  }
+}
+
+header .ratings {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  margin-top: -50px;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 900px) {
+  header .ratings {
+    margin-top: 0;
+    margin-left: 30px;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+header .ratings .rating {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px;
+      grid-template-columns: 350px;
+  -ms-grid-rows: 30px 30px;
+      grid-template-rows: 30px 30px;
+  justify-items: center;
+  width: 350px;
+  height: 75px;
+  background-color: #f7f2f7;
+  border-radius: 8px;
+  margin-top: 15px;
+  grid-gap: 25px;
+}
+
+@media screen and (min-width: 900px) {
+  header .ratings .rating {
+    -ms-grid-columns: 100px 1fr;
+        grid-template-columns: 100px 1fr;
+    -ms-grid-rows: 55px;
+        grid-template-rows: 55px;
+    width: 450px;
+    height: 55px;
+    padding: 5px 30px;
+  }
+}
+
+header .ratings .rating p {
+  color: #502050;
+  font-weight: 700;
+}
+
+header .ratings .rating2 {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 900px) {
+  header .ratings .rating2 {
+    margin-left: 50px;
+  }
+}
+
+header .ratings .rating3 {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 900px) {
+  header .ratings .rating3 {
+    margin-left: 100px;
+  }
+}
+
+header .ratings .stars {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-top: 13px;
+}
+
+header .ratings p {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-top: -20px;
+}
+
+@media screen and (min-width: 900px) {
+  header .ratings p {
+    margin-top: -65px;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+.comments {
+  display: -ms-grid;
+  display: grid;
+  padding: 60px 35px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .comments {
+    -ms-grid-columns: (350px)[3];
+        grid-template-columns: repeat(3, 350px);
+    -ms-grid-rows: 280px;
+        grid-template-rows: 280px;
+    grid-gap: 20px;
+    padding: 50px 105px;
+  }
+}
+
+.comment {
+  width: 350px;
+  height: 250px;
+  padding: 15px 15px;
+  background-color: #502050;
+  border-radius: 8px;
+}
+
+.comment .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment .profile img {
+  border-radius: 50%;
+  margin: 20px 20px 0px 0px;
+}
+
+.comment .profile #name {
+  color: white;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.comment .profile p {
+  color: #ee68a4;
+  margin: 0;
+}
+
+.comment #review {
+  color: white;
+}
+
+.comment2 {
+  margin-top: 25px;
+}
+
+.comment3 {
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 900px) {
+  .comment3 {
+    margin-top: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

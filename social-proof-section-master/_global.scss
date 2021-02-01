@@ -1,0 +1,30 @@
+$darkmagenta: hsl(300, 43%, 22%);
+$softpink: hsl(333, 80%, 67%);
+$grayishmagenta: hsl(303, 10%, 53%);
+$lightmagenta: hsl(300, 24%, 96%);
+
+html {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background-image: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg),
+    url(/social-proof-section-master/images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: 1px 1px, 1px 700px;
+
+  @media screen and (min-width: 900px) {
+    background-image: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg),
+      url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 70%, 70%;
+    background-position: -400px -110px, 320px 160px;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}

@@ -1,0 +1,101 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 200px);
+  padding: 50px 35px;
+  justify-items: center;
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 120px 120px;
+    padding: 50px 35px;
+  }
+
+  #title {
+    grid-column: 1;
+    grid-row: 1;
+    width: 250px;
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: $darkmagenta;
+    margin-top: 0px;
+    text-align: center;
+    @media screen and (min-width: 900px) {
+      width: 370px;
+      text-align: left;
+    }
+  }
+  #subtitle {
+    grid-row: 2;
+    width: 350px;
+    text-align: center;
+    color: $grayishmagenta;
+    font-weight: 400;
+    @media screen and (min-width: 900px) {
+      grid-row: 2;
+      text-align: left;
+    }
+  }
+  .ratings {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: -50px;
+    margin-left: 0;
+    @media screen and (min-width: 900px) {
+      margin-top: 0;
+      margin-left: 30px;
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .rating {
+      display: grid;
+      grid-template-columns: 350px;
+      grid-template-rows: 30px 30px;
+      // padding: 5px 30px;
+      justify-items: center;
+      width: 350px;
+      height: 75px;
+      background-color: $lightmagenta;
+      border-radius: 8px;
+      margin-top: 15px;
+      grid-gap: 25px;
+      @media screen and (min-width: 900px) {
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 55px;
+        width: 450px;
+        height: 55px;
+        padding: 5px 30px;
+      }
+      p {
+        color: $darkmagenta;
+        font-weight: 700;
+      }
+    }
+
+    .rating2 {
+      margin-left: 0;
+      @media screen and (min-width: 900px) {
+        margin-left: 50px;
+      }
+    }
+
+    .rating3 {
+      margin-left: 0;
+      @media screen and (min-width: 900px) {
+        margin-left: 100px;
+      }
+    }
+
+    .stars {
+      grid-row: 1;
+      margin-top: 13px;
+    }
+    p {
+      grid-row: 2;
+      margin-top: -20px;
+      @media screen and (min-width: 900px) {
+        margin-top: -65px;
+        grid-column: 2;
+      }
+    }
+  }
+}
