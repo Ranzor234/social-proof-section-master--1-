@@ -1,6 +1,6 @@
 .comments {
   display: grid;
-  padding: 60px 35px;
+  padding: 60px 60px;
   @media screen and (min-width: 900px) {
     grid-template-columns: repeat(3, 350px);
     grid-template-rows: 280px;
