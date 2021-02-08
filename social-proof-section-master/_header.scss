@@ -18,6 +18,7 @@ header {
     font-size: 2.3rem;
     color: $darkmagenta;
     margin-top: 0px;
+    margin-left: 15px;
     text-align: center;
     @media screen and (min-width: 900px) {
       width: 370px;
@@ -42,7 +43,7 @@ header {
     margin-left: 0;
     @media screen and (min-width: 900px) {
       margin-top: 0;
-      margin-left: 100px;
+      // margin-left: 100px;
       grid-column: 2;
       grid-row: 1;
     }

@@ -1,11 +1,13 @@
 .comments {
   display: grid;
-  padding: 60px 60px;
+  // padding: 60px 60px;
+  justify-items: center;
   @media screen and (min-width: 900px) {
     grid-template-columns: repeat(3, 350px);
-    grid-template-rows: 280px;
+    grid-template-rows: 400px;
     grid-gap: 20px;
-    padding: 50px 105px;
+    margin-left: 50px;
+    justify-content: center;
   }
   margin-top: 0;
 }
