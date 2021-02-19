@@ -64,6 +64,8 @@ header #title {
   header #title {
     width: 370px;
     text-align: left;
+    margin-right: 100px;
+    margin-top: 18px;
   }
 }
 
@@ -81,6 +83,8 @@ header #subtitle {
     -ms-grid-row: 2;
     grid-row: 2;
     text-align: left;
+    margin-right: 100px;
+    margin-top: 40px;
   }
 }
 
@@ -203,6 +207,7 @@ header .ratings p {
   padding: 15px 15px;
   background-color: #502050;
   border-radius: 8px;
+  color: white;
 }
 
 .comment .profile {
@@ -214,6 +219,10 @@ header .ratings p {
 .comment .profile img {
   border-radius: 50%;
   margin: 20px 20px 0px 0px;
+}
+
+.comment .profile .names {
+  margin-top: 25px;
 }
 
 .comment .profile #name {

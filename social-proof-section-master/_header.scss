@@ -23,6 +23,8 @@ header {
     @media screen and (min-width: 900px) {
       width: 370px;
       text-align: left;
+      margin-right: 100px;
+      margin-top: 18px;
     }
   }
   #subtitle {
@@ -34,6 +36,8 @@ header {
     @media screen and (min-width: 900px) {
       grid-row: 2;
       text-align: left;
+      margin-right: 100px;
+      margin-top: 40px;
     }
   }
   .ratings {
